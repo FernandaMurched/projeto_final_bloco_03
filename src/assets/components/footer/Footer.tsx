@@ -1,4 +1,4 @@
-import { LinkedinLogo, InstagramLogo, FacebookLogo } from "@phosphor-icons/react"
+import { GithubLogoIcon, LinkedinLogoIcon } from "@phosphor-icons/react"
 
 
 function Footer() {
@@ -10,13 +10,19 @@ function Footer() {
             <div className="flex justify-center bg-gray-100 text-teal-700">
                 <div className="container flex flex-col items-center py-4">
                     <p className='text-xl font-bold'>
-                            Farmácia | Copyright {data}
+                            Projeto Health+ | Copyright {data}
                         </p>
-                    <p className='text-lg'>Acesse nossas redes sociais</p>
+                    <p className='text-lg'>Acesse minhas redes sociais</p>
                     <div className='flex gap-2'>
-                        <LinkedinLogo size={48} weight='bold' />
-                        <InstagramLogo size={48} weight='bold' />
-                        <FacebookLogo size={48} weight='bold' />
+                        <a href="https://github.com/FernandaMurched" target="_blank">
+                        <GithubLogoIcon size={48} weight="regular" />
+                        </a>
+                        <a
+                        href="https://www.linkedin.com/in/fernandamurched/"
+                        target="_blank"
+                        >
+                        <LinkedinLogoIcon size={48} weight="regular" />
+                        </a>
                     </div>
                 </div>
             </div>
