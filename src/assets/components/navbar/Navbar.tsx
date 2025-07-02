@@ -23,7 +23,7 @@ function Navbar() {
                     {/* CORRIGIDO: Mudança do caminho para corresponder à rota definida */}
                     <Link to="/cadastrarcategoria" className="flex items-center gap-1 hover:text-indigo-300 transition-colors">
                         <Plus size={18} />
-                        Cadastrar Categoria
+                        Cadastrar categoria
                     </Link>
                 </div>
             </div>

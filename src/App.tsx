@@ -5,6 +5,8 @@ import Navbar from './assets/components/navbar/Navbar'
 import ListarCategorias from './assets/components/categorias/listarcategorias/ListarCategorias'
 import DeletarCategoria from './assets/components/categorias/deletarcategorias/DeletarCategorias'
 import FormCategoria from './assets/components/categorias/formcategorias/FormCategorias'
+import Contato from './assets/pages/contato/Contato'
+import Produtos from './assets/pages/produtos/Produto'
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
             <Route path="/cadastrarcategoria" element={<FormCategoria />} />
             <Route path="/editarcategoria/:id" element={<FormCategoria />} />
             <Route path="/deletarcategoria/:id" element={<DeletarCategoria />} />
+            <Route path="/produtos" element={<Produtos />} />
+            <Route path="/contato" element={<Contato />} />
           </Routes>
         </main>
         <Footer />

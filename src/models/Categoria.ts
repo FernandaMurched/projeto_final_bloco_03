@@ -1,4 +1,4 @@
 export default interface Categoria {
-    id: number | undefined;
-    nome: string;
+  id: number | undefined;
+  nome: string;
 }
