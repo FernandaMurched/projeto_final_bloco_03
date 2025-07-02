@@ -1,10 +1,10 @@
 import { House, List, Plus } from '@phosphor-icons/react'
 import { Link } from 'react-router-dom'
-import{ Pill } from '@phosphor-icons/react'
+import { Pill } from '@phosphor-icons/react'
 
 function Navbar() {
     return (
-        <div className='w-full flex justify-center py-4 bg-indigo-900 text-white shadow-lg'>
+        <div className='w-full flex justify-center py-4 bg-teal-700 text-white shadow-lg'>
             <div className="container flex justify-between items-center text-lg">
                 <Link to="/" className="flex items-center gap-2 font-bold text-xl">
                     <Pill size={32} />
@@ -20,7 +20,8 @@ function Navbar() {
                         <List size={18} />
                         Categorias
                     </Link>
-                    <Link to="/categorias/cadastrar" className="flex items-center gap-1 hover:text-indigo-300 transition-colors">
+                    {/* CORRIGIDO: Mudança do caminho para corresponder à rota definida */}
+                    <Link to="/cadastrarcategoria" className="flex items-center gap-1 hover:text-indigo-300 transition-colors">
                         <Plus size={18} />
                         Cadastrar Categoria
                     </Link>
